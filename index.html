@@ -5,99 +5,74 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>EXAME DE FAIXA — Técnicas</title>
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#ff5c5c;--muted:#9aa4b2;--glass: rgba(255,255,255,0.03)}
-    *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:linear-gradient(180deg,#071024 0%, #071a2a 100%); color:#e6eef6; -webkit-font-smoothing:antialiased}
-    header{padding:28px 20px; text-align:center}
-    h1{margin:0;font-size:28px;letter-spacing:1px}
-    p.lead{color:var(--muted);margin:6px 0 0}
-
-    .container{max-width:980px;margin:28px auto;padding:20px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
-    .card h2{margin:0 0 8px;font-size:18px}
-    .tech-list{list-style:none;padding:0;margin:0}
-    .tech-list li{padding:8px 10px;border-radius:8px;margin-bottom:8px;background:linear-gradient(90deg, rgba(255,255,255,0.02), transparent);display:flex;align-items:center;gap:10px}
-    .tag{font-size:12px;padding:4px 8px;border-radius:999px;background:var(--glass);color:var(--muted)}
-    .muted{color:var(--muted);font-size:13px}
-
-    footer{max-width:980px;margin:18px auto;padding:12px 20px;color:var(--muted);text-align:center}
-
-    /* small helpers */
-    .cta{display:inline-block;margin-top:12px;background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none}
-    .video{margin-top:12px;border-radius:8px;overflow:hidden}
-    .notes{font-size:13px;color:var(--muted);margin-top:8px}
-
-    @media (max-width:560px){h1{font-size:22px}}
+    body{font-family:Inter,Arial,sans-serif;margin:0;background:#0e1624;color:#f2f4f8}
+    header{text-align:center;padding:30px 10px;background:#121b2e}
+    h1{margin:0;font-size:28px}
+    h2{margin-top:0}
+    .container{max-width:1000px;margin:auto;padding:20px}
+    section{background:#18233a;margin-bottom:20px;padding:20px;border-radius:10px}
+    iframe{width:100%;height:215px;border:none;border-radius:8px;margin-top:8px}
+    ul{list-style:none;padding-left:0}
+    li{margin-bottom:10px}
+    .tag{font-size:13px;color:#a5b2cc}
   </style>
 </head>
 <body>
   <header>
     <h1>EXAME DE FAIXA</h1>
-    <p class="lead">Técnicas essenciais — revisa rápido e treina com vídeos do Kodokan</p>
+    <p>Técnicas completas com vídeos do Kodokan</p>
   </header>
 
   <main class="container">
-    <div class="grid">
-      <section class="card">
-        <h2>Henraku / Henka Waza <span class="tag">Variações e combinações</span></h2>
-        <p class="muted">Ideias de combinação e variações para transição de ataques.</p>
-        <ul class="tech-list">
-          <li><strong>Seoi-nage → Seoi-otoshi</strong><span style="margin-left:auto" class="muted">ex.: variação de entrada</span></li>
-          <li><strong>O-soto-gari → O-uchi-gari</strong><span style="margin-left:auto" class="muted">combinação de pernas</span></li>
-          <li><strong>De-ashi-harai → Ko-uchi-gari</strong><span style="margin-left:auto" class="muted">controle de peso</span></li>
-          <li><strong>Osoto-gaeshi (contra)</strong><span style="margin-left:auto" class="muted">resposta a desequilíbrio</span></li>
-          <li><strong>Entrada curta + variação (fake)</strong><span style="margin-left:auto" class="muted">uso de feints</span></li>
-        </ul>
-        <div class="notes">Dica: pratique a transição lenta primeiro e aumente velocidade mantendo o kuzushi (desequilíbrio).</div>
-      </section>
-
-      <section class="card">
-        <h2>Katame-waza <span class="tag">Imobilizações / Controles</span></h2>
-        <p class="muted">Posições de controle no solo (osae-komi).</p>
-        <ul class="tech-list">
-          <li><strong>Kesa-gatame</strong><span style="margin-left:auto" class="muted">controle lateral</span></li>
-          <li><strong>Tate-shiho-gatame</strong><span style="margin-left:auto" class="muted">montada</span></li>
-          <li><strong>Yoko-shiho-gatame</strong><span style="margin-left:auto" class="muted">lado superior</span></li>
-          <li><strong>Kami-shiho-gatame</strong><span style="margin-left:auto" class="muted">controle por cima da cabeça</span></li>
-          <li><strong>Kuzure-kesa-gatame</strong><span style="margin-left:auto" class="muted">variação moderna</span></li>
-        </ul>
-        <div class="video">
-          <!-- espaço para embed de vídeo Kodokan: substitua o código do vídeo abaixo -->
-          <iframe width="100%" height="215" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen title="Exemplo Kodokan"></iframe>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>Shime-waza <span class="tag">Estrangulamentos</span></h2>
-        <p class="muted">Estrangulamentos mais usados — pratique segurança e técnica.</p>
-        <ul class="tech-list">
-          <li><strong>Hadaka-jime (estrang. nua)</strong><span style="margin-left:auto" class="muted">sem pegar o colar</span></li>
-          <li><strong>Okuri-eri-jime</strong><span style="margin-left:auto" class="muted">pelo colar</span></li>
-          <li><strong>Nami-juji-jime</strong><span style="margin-left:auto" class="muted">cruzado (mão normal)</span></li>
-          <li><strong>Kata-juji-jime</strong><span style="margin-left:auto" class="muted">cruzado (mão invertida)</span></li>
-          <li><strong>Sankaku-jime (triângulo)</strong><span style="margin-left:auto" class="muted">triângulo aplicado do solo</span></li>
-        </ul>
-        <div class="notes">Segurança: pratique com controle e libere o parceiro imediatamente ao sinal.</div>
-      </section>
-    </div>
-
-    <section class="card" style="margin-top:18px;">
-      <h2>Checklist rápido para o exame</h2>
-      <ul class="tech-list">
-        <li>Domine a entrada e o controle de equilíbrio (kuzushi).</li>
-        <li>Se prepare para mostrar ao menos 1 variação (henka) por técnica.</li>
-        <li>Mostre transição entre nage-waza e katame-waza quando solicitado.</li>
-        <li>Respeite sinais de segurança em shime-waza.</li>
+    <section>
+      <h2>HENRAKU-HENKA-WAZA (Combinadas)</h2>
+      <ul>
+        <li>DE ASHI HARAI com SEIO NAGE<br><iframe src="https://www.youtube.com/embed/4BUUvqxi_Kk"></iframe></li>
+        <li>HIZA GURUMA com O SOTO GARI<br><iframe src="https://www.youtube.com/embed/JPJx9-oAVns"></iframe></li>
+        <li>O UCHI GARI com KO UCHI GARI</li>
+        <li>DE ASHI HARAI com O SOTO GARI<br><iframe src="https://www.youtube.com/embed/4BUUvqxi_Kk"></iframe></li>
+        <li>KOSHI GURUMA com O UCHI GARI<br><iframe src="https://www.youtube.com/embed/SU7Id6uVJ44"></iframe></li>
+        <li>HARAI GOSHI com O SOTO GARI<br><iframe src="https://www.youtube.com/embed/qTo8HlAAkOo"></iframe></li>
+        <li>KOSHI GURUMA com HARAI GOSHI</li>
+        <li>UCHI MATA com O UCHI GARI<br><iframe src="https://www.youtube.com/embed/iUpSu5J-bgw"></iframe></li>
+        <li>TSURI GOSHI com HANE GOSHI<br><iframe src="https://www.youtube.com/embed/51Htlp7xEvE"></iframe></li>
+        <li>TSURI KOMI GOSHI com TAI OTOSHI<br><iframe src="https://www.youtube.com/embed/McfzA0yRVt4"></iframe></li>
+        <li>HANE GOSHI com O UCHI GARI / HARAI GOSHI<br><iframe src="https://www.youtube.com/embed/M9_7De6A1kk"></iframe></li>
       </ul>
-      <a class="cta" href="#" onclick="alert('Cole aqui links do Kodokan (youtube) ou códigos de vídeo para embutir.');return false;">Editar vídeos / adicionar links</a>
     </section>
 
+    <section>
+      <h2>KATAME-WAZA (Imobilização)</h2>
+      <ul>
+        <li>HON KESA GATAME<br><iframe src="https://www.youtube.com/embed/NDaQuJOFBYk"></iframe></li>
+        <li>KATA GATAME<br><iframe src="https://www.youtube.com/embed/zQR3IOXxO_Q"></iframe></li>
+        <li>TATE SHIRO GATAME<br><iframe src="https://www.youtube.com/embed/55-rFmBx53g"></iframe></li>
+        <li>KUZURE KESA GATAME<br><iframe src="https://www.youtube.com/embed/Q2fb9jaoUFQ"></iframe></li>
+        <li>MAKURA KESA GATAME<br><iframe src="https://www.youtube.com/embed/k9MYaHbYqnQ"></iframe></li>
+        <li>KUZURE TATE SHIRO GATAME<br><iframe src="https://www.youtube.com/embed/i9VUQhqxYJU"></iframe></li>
+        <li>YOKO SHIRO GATAME<br><iframe src="https://www.youtube.com/embed/TT7XJVSEQxA"></iframe></li>
+        <li>KAMI SHIRO GATAME<br><iframe src="https://www.youtube.com/embed/HFuMjOv0WN8"></iframe></li>
+        <li>USHIRO KESA GATAME<br><iframe src="https://www.youtube.com/embed/SBapox2M2dE"></iframe></li>
+        <li>KUZURE KAMI SHIRO GATAME<br><iframe src="https://www.youtube.com/embed/YUrogQWdwiY"></iframe></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>SHIME-WAZA (Estrangulamentos)</h2>
+      <ul>
+        <li>NAMI JUJI JIME<br><iframe src="https://www.youtube.com/embed/k2cHry9HByQ"></iframe></li>
+        <li>KATA JUJI JIME<br><iframe src="https://www.youtube.com/embed/3VZVUAmiMD8"></iframe></li>
+        <li>GYAKU JUJI JIME<br><iframe src="https://www.youtube.com/embed/t3tQriIPdlI"></iframe></li>
+        <li>HADAKA JIME II<br><iframe src="https://www.youtube.com/embed/9f0n8jez7iA"></iframe></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>KANSETSU-WAZA (Chave de braço)</h2>
+      <ul>
+        <li>UDE HISHIGI JUJI GATAME<br><iframe src="https://www.youtube.com/embed/OWgSOlCuMXw"></iframe></li>
+      </ul>
+    </section>
   </main>
-
-  <footer>
-    Criado para treinar o <strong>Exame de Faixa</strong> • Edite as entradas com suas técnicas específicas.
-  </footer>
-
 </body>
 </html>
