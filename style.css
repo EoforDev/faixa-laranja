@@ -1,24 +1,64 @@
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#ff5c5c;--muted:#9aa4b2;--glass: rgba(255,255,255,0.03)}
-    *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:linear-gradient(180deg,#071024 0%, #071a2a 100%); color:#e6eef6; -webkit-font-smoothing:antialiased}
-    header{padding:28px 20px; text-align:center}
-    h1{margin:0;font-size:28px;letter-spacing:1px}
-    p.lead{color:var(--muted);margin:6px 0 0}
+@charset "UTF-8";
 
-    .container{max-width:980px;margin:28px auto;padding:20px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
-    .card h2{margin:0 0 8px;font-size:18px}
-    .tech-list{list-style:none;padding:0;margin:0}
-    .tech-list li{padding:8px 10px;border-radius:8px;margin-bottom:8px;background:linear-gradient(90deg, rgba(255,255,255,0.02), transparent);display:flex;align-items:center;gap:10px}
-    .tag{font-size:12px;padding:4px 8px;border-radius:999px;background:var(--glass);color:var(--muted)}
-    .muted{color:var(--muted);font-size:13px}
+* {
+    color: rgb(225, 225, 225);
+    box-sizing: border-box;
+}
 
-    footer{max-width:980px;margin:18px auto;padding:12px 20px;color:var(--muted);text-align:center}
+body {
+    background-color: rgb(10, 10, 10);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px;
+}
 
-    /* small helpers */
-    .cta{display:inline-block;margin-top:12px;background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none}
-    .video{margin-top:12px;border-radius:8px;overflow:hidden}
-    .notes{font-size:13px;color:var(--muted);margin-top:8px}
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
 
-    @media (max-width:560px){h1{font-size:22px}}
+h2, h3 {
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(231, 104, 0);
+}
+
+strong {
+    color: rgb(255, 164, 89);
+}
+
+strong:hover {
+    color: rgb(231, 104, 0);
+}
+
+.sumario, .historia, .arbitragem, .terminologias, .saudacoes, .ukemi,
+.nagewaza, .katamewaza, .kaeshiwaze, .henrakuhenkawaza, .shimewaza {
+    background-color: rgb(25, 25, 25);
+    border-radius: 20px;
+
+    width: 70%;
+    max-width: 900px;
+
+    padding: 20px;
+    margin: 20px auto;
+
+    text-align: justify;
+}
+
+.video {
+    text-align: center;
+}
+
+iframe {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+}
