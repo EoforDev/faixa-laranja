@@ -43,7 +43,7 @@ strong:hover {
     background-color: rgb(25, 25, 25);
     border-radius: 20px;
 
-    width: 70%;
+    width: 80%;
     max-width: 900px;
 
     padding: 20px;
@@ -60,5 +60,5 @@ iframe {
     border-radius: 10px;
     margin-bottom: 20px;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
 }
